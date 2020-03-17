@@ -1,9 +1,17 @@
 {
-  "name": "hello-mongoose",
+  "name": "hello-circle-ci",
   "version": "1.0.0",
   "main": "index.js",
   "license": "MIT",
+  "scripts": {
+    "start": "node index.js",
+    "test": "jest"
+  },
   "dependencies": {
-    "mongoose": "^4.13.20"
+    "mongoose": "^4.13.20",
+    "redis": "^3.0.2"
+  },
+  "devDependencies": {
+    "jest": "^25.1.0"
   }
 }

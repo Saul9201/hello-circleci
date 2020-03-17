@@ -1,0 +1,19 @@
+version: '3.4'
+services:
+    mongo:
+        image: mongo:3.6
+        ports:
+            - '27017:27017'
+        volumes:
+            - ./db/backup:/data/configdb
+            - ./db/mongodb:/data/db
+        restart: on-failure:5
+        networks:
+            - default
+    redis:
+        image: redis
+        ports:
+            - '6379:6379'
+        restart: on-failure:5
+        networks:
+            - default
