@@ -10,7 +10,7 @@ describe('mongodb', () => {
     it('should mongodb is runing', (done) => {
         mongoose.connect(dbConfig, { useMongoClient: true }, (err) => {
             try {
-                expect(err).toBe(undefined || null);
+                expect(err).toBe(1);
                 done();
             } catch (error) {
                 done(error);
