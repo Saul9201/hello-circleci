@@ -35,7 +35,7 @@ connection.once('connected', () => {
     });
 });
 
-
+// Connection Examples
 // connection.on('error', console.error.bind(console, '-> connection error:'));
 // connection.on('disconnected', () => { console.log('-> lost connection'); });
 // connection.on('reconnect', () => { console.log('-> reconnected'); });
